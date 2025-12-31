@@ -35,6 +35,17 @@ This project is built for learning and practical implementation of file handling
 - pdf-lib
 - Puppeteer (HTML to PDF)
 
+## 👤 Author Details
+
+**Name:** Meet Virugama  
+**Role:** Full-Stack Developer (Student)  
+**Institution:** DA-IICT  
+**Project Type:** Academic / Learning Project  
+**Technologies Used:** React, Node.js, Express, PDF Libraries  
+
+This project was designed and developed as a hands-on learning exercise to understand full-stack development, file handling, and PDF processing using modern web technologies.
+
+
 ---
 
 ## 📂 Project Structure
@@ -107,14 +118,3 @@ Express.js
 pdf-lib
 Puppeteer
 ChatGPT
-
-## 👤 Author Details
-
-**Name:** Meet Virugama  
-**Role:** Full-Stack Developer (Student)  
-**Institution:** DA-IICT  
-**Project Type:** Academic / Learning Project  
-**Technologies Used:** React, Node.js, Express, PDF Libraries  
-
-This project was designed and developed as a hands-on learning exercise to understand full-stack development, file handling, and PDF processing using modern web technologies.
-
