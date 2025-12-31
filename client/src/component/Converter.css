@@ -1,0 +1,181 @@
+/* ===============================
+   RESET
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "JetBrains Mono", "Poppins", monospace;
+}
+
+/* ===============================
+   FULL PAGE BACKGROUND
+================================ */
+body {
+  min-height: 100vh;
+  background:
+    linear-gradient(0deg, rgba(0,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,255,255,0.05) 1px, transparent 1px),
+    radial-gradient(circle at top, #0a0f1f, #000);
+  background-size: 40px 40px, 40px 40px, cover;
+  animation: gridMove 12s linear infinite;
+  color: #eaffff;
+}
+
+@keyframes gridMove {
+  from { background-position: 0 0, 0 0, center; }
+  to { background-position: 40px 40px, 40px 40px, center; }
+}
+
+/* ===============================
+   MAIN CONTAINER
+================================ */
+#pdf-converter.container {
+  min-height: 100vh;
+  max-width: 850px;
+  margin: auto;
+  padding: 50px 35px;
+  background: rgba(5, 10, 25, 0.85);
+  backdrop-filter: blur(22px);
+  box-shadow:
+    0 0 40px rgba(0, 255, 255, 0.25),
+    inset 0 0 40px rgba(0, 255, 255, 0.08);
+  animation: bootUp 0.9s ease;
+}
+
+@keyframes bootUp {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===============================
+   MAIN TITLE
+================================ */
+.main-title {
+  text-align: center;
+  font-size: 44px;
+  letter-spacing: 4px;
+  margin-bottom: 50px;
+  color: #00ffff;
+  text-shadow:
+    0 0 10px #00ffff,
+    0 0 30px rgba(0,255,255,0.7);
+}
+
+/* ===============================
+   CARD
+================================ */
+.card {
+  padding: 26px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.75);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px rgba(0,255,255,0.8);
+}
+
+/* ===============================
+   CARD TITLE
+================================ */
+.card-title {
+  font-size: 17px;
+  margin-bottom: 14px;
+  color: #00ffff;
+  letter-spacing: 1.2px;
+}
+
+/* ===============================
+   INPUTS
+================================ */
+.file-input,
+.textarea-input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  background: #020617;
+  border: 1px solid rgba(0,255,255,0.4);
+  border-radius: 6px;
+  color: #00ffff;
+  font-size: 14px;
+  outline: none;
+}
+
+.file-input {
+  cursor: pointer;
+  border-style: dashed;
+}
+
+.file-input::-webkit-file-upload-button {
+  background: #00ffff;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.file-input:hover,
+.textarea-input:hover {
+  box-shadow: 0 0 15px rgba(0,255,255,0.6);
+}
+
+/* ===============================
+   BUTTON
+================================ */
+.convert-btn {
+  padding: 12px 28px;
+  border-radius: 24px;
+  border: none;
+  background: #00ffff;
+  color: #000;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.convert-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 30px rgba(0,255,255,1);
+}
+
+/* ===============================
+   FOOTER
+================================ */
+.footer {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: #7ffcff;
+}
+
+.footer span {
+  color: #00ffff;
+  font-weight: 700;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 30px;
+  }
+
+  #pdf-converter.container {
+    padding: 28px 20px;
+  }
+}
