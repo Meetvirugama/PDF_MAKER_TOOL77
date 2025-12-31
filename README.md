@@ -16,8 +16,6 @@ This project is built for learning and practical implementation of file handling
 - 📝 **Text to PDF**
 - 🌐 **HTML to PDF**
 
-> ❌ Split PDF and Protect PDF features have been removed.
-
 ---
 
 ## 🛠 Tech Stack
