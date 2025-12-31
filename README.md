@@ -63,19 +63,23 @@ Converter Tool/
 │   │   └── htmlToPdf.js
 │   ├── server.js
 │   └── package.json
+
 ▶️ How to Run the Project
+
 1️⃣ Start Backend Server
 cd server
 npm install
 nodemon server.js
 Backend will run on:
 http://localhost:3000
+
 2️⃣ Start Frontend
 cd client
 npm install
 npm run dev
 Frontend will run on:
 http://localhost:5173
+
 🔁 API Endpoints
 Feature	Endpoint
 Multiple Images → PDF	/multi-image-to-pdf
@@ -84,18 +88,33 @@ Excel → PDF	/excel-to-pdf
 Compress PDF	/compress-pdf
 Text → PDF	/text-to-pdf
 HTML → PDF	/html-to-pdf
+
 🎨 Styling
 All CSS styling in this project was created with the help of ChatGPT.
+
 ⚠️ Notes
 Node.js version 18+ is recommended
 Puppeteer may download Chromium during installation
 PDF compression depends on system tools availability
 Large files may take additional processing time
+
 📜 License
 This project is created for educational and learning purposes only.
+
 🙌 Acknowledgements
 React
 Express.js
 pdf-lib
 Puppeteer
 ChatGPT
+
+## 👤 Author Details
+
+**Name:** Meet Virugama  
+**Role:** Full-Stack Developer (Student)  
+**Institution:** DA-IICT  
+**Project Type:** Academic / Learning Project  
+**Technologies Used:** React, Node.js, Express, PDF Libraries  
+
+This project was designed and developed as a hands-on learning exercise to understand full-stack development, file handling, and PDF processing using modern web technologies.
+
