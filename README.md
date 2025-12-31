@@ -1,111 +1,102 @@
-# PDF Converter Tool
-
-A full-stack PDF Converter application built with React (Vite) and Node.js (Express).  
-It supports converting, merging, and processing PDFs using a simple web interface.
-
----
-
-## Features
-
-- Multiple Images → One PDF
-- Multiple PDFs → One PDF (Merge)
-- Excel → PDF
-- Compress PDF
-- Text → PDF
-- HTML → PDF
-- Convert button based workflow
-- Auto clear input after conversion
-
----
-
-## Project Structure
-
-client/
-├── public/
-├── src/
-│ ├── component/
-│ │ ├── Converter.css
-│ │ ├── Converter.jsx
-│ │ ├── download.jsx
-│ │ ├── filebased.jsx
-│ │ ├── formImgPdf.jsx
-│ │ ├── html.jsx
-│ │ ├── multipailmgPdf.jsx
-│ │ ├── SingleInput.jsx
-│ │ ├── text.jsx
-│ │ └── TxtHtmlForm.jsx
-│ ├── App.jsx
-│ ├── main.jsx
-├── index.html
-├── package.json
-└── vite.config.js
-server/
-├── routes/
-│ ├── compressPdf.js
-│ ├── excelToPdf.js
-│ ├── htmlToPdf.js
-│ ├── imgsToPdf.js
-│ ├── mergePdf.js
-│ └── textToPdf.js
-├── uploads/
-├── db.js
-├── server.js
-└── package.json
-
-
----
-
-## Technologies Used
-
-### Frontend
-- React (Vite)
-- Axios
-- CSS
-
-### Backend
-- Node.js
-- Express.js
-- Multer
-- pdf-lib
-- CORS
-
----
-
-## Setup Instructions
-
-### Backend
-
-```bash
+📄 PDF Converter Tool (MERN)
+A full-stack PDF Converter Web Application built using React (Vite) on the frontend and Node.js + Express on the backend.
+It allows users to convert and generate PDFs easily from multiple formats.
+🚀 Features
+✅ File Conversions
+Multiple Images → One PDF
+Multiple PDFs → One PDF
+Excel → PDF
+Text → PDF
+HTML → PDF
+✅ PDF Operations
+Compress PDF
+🛠 Tech Stack
+Frontend
+React (Vite)
+Axios
+JavaScript
+Backend
+Node.js
+Express.js
+pdf-lib
+Puppeteer
+Multer
+📂 Project Structure
+Converter Tool/
+│
+├── client/
+│   ├── src/
+│   │   ├── component/
+│   │   │   ├── Converter.jsx
+│   │   │   ├── TxtHtmlForm.jsx
+│   │   │   ├── SingleInput.jsx
+│   │   │   ├── MultiImgPdf.jsx
+│   │   │   └── ...
+│   │   ├── utils/
+│   │   │   ├── text.js
+│   │   │   ├── html.js
+│   │   │   ├── download.js
+│   │   │   └── filebased.js
+│   │   └── App.jsx
+│   └── package.json
+│
+├── server/
+│   ├── routes/
+│   │   ├── textToPdf.js
+│   │   ├── htmlToPdf.js
+│   │   ├── excelToPdf.js
+│   │   ├── compressPdf.js
+│   │   ├── multiImageToPdf.js
+│   │   └── mergePdf.js
+│   ├── server.js
+│   └── package.json
+⚙️ Installation & Setup
+1️⃣ Clone the Repository
+git clone https://github.com/your-username/pdf-converter-tool.git
+cd pdf-converter-tool
+2️⃣ Backend Setup
 cd server
 npm install
-mkdir uploads
-node server.js
-Backend runs on:
+npm run dev
+Server runs on:
 http://localhost:3000
-Frontend
+3️⃣ Frontend Setup
 cd client
 npm install
 npm run dev
 Frontend runs on:
 http://localhost:5173
-API Routes
-/multi-image-to-pdf
-/merge-pdf
-/excel-to-pdf
-/text-to-pdf
-/html-to-pdf
-/compress-pdf
-File Upload Note
-Multiple files must be sent using the key files
-Backend uses upload.array("files")
-Example Test (Images to PDF)
-curl -X POST http://localhost:3000/multi-image-to-pdf \
-  -F "files=@img1.jpg" \
-  -F "files=@img2.png" \
-  --output output.pdf
-Developer
-Developed by Meet
-
----
-
-If you want a **shorter** or **GitHub-optimized** version, tell me 👍
+🔗 API Endpoints
+Feature	Endpoint	Method
+Text → PDF	/text-to-pdf	POST
+HTML → PDF	/html-to-pdf	POST
+Excel → PDF	/excel-to-pdf	POST
+Compress PDF	/compress-pdf	POST
+Multi Images → PDF	/multi-image-to-pdf	POST
+Merge PDFs	/merge-pdf	POST
+🧪 How to Test
+Start the backend server
+Start the frontend
+Upload files or enter text / HTML
+Click convert
+PDF will download automatically
+⚠️ Important Notes
+❌ No PDF splitting
+❌ No password protection
+✅ No Ghostscript required
+✅ No system-level dependencies
+✅ Works on Windows, macOS, and Linux
+📌 Known Limitations
+PDF compression is basic (JavaScript-based)
+Large PDFs may take more time to process
+📜 License
+This project is created for learning and academic purposes.
+👨‍💻 Author
+Meet Virugama
+DA-IICT Student
+MERN Stack Developer
+If you want next:
+📸 Add screenshots
+🧾 Resume-ready project description
+🎨 UI improvements
+☁️ Deploy on Render / Vercel
